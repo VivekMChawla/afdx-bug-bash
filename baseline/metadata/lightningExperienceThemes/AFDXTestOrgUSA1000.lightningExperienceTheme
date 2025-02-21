@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningExperienceTheme xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultBrandingSet>LEXTHEMINGAFDXTestOrgUSA1000</defaultBrandingSet>
+    <description>Custom theme for AFDX Prod Orgs</description>
+    <designSystemVersion>SLDS_v1</designSystemVersion>
+    <masterLabel>AFDX Test Org (USA1000)</masterLabel>
+    <shouldOverrideLoadingImage>false</shouldOverrideLoadingImage>
+</LightningExperienceTheme>
