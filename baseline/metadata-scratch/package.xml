@@ -12,5 +12,13 @@
         <members>*</members>
         <name>LightningExperienceTheme</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSetGroup</name>
+    </types>
     <version>63.0</version>
 </Package>
