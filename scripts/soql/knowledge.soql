@@ -1,0 +1,2 @@
+SELECT IsVisibleInPkb, IsVisibleInCsp, IsVisibleInPrm, Language, Title, UrlName, Summary, Content__c
+  FROM Knowledge__kav

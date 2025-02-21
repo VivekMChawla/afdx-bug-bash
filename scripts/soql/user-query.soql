@@ -1,0 +1,18 @@
+SELECT 
+  ProfileId, 
+  Username, 
+  Alias, 
+  CommunityNickname, 
+  Email, 
+  FirstName, 
+  LastName, 
+  IsActive, 
+  ForecastEnabled, 
+  EmailEncodingKey, 
+  LanguageLocaleKey, 
+  LocaleSidKey, 
+  TimeZoneSidKey, 
+  UserPermissionsKnowledgeUser, 
+  UserPermissionsSupportUser 
+FROM 
+  User
