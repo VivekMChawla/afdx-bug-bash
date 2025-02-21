@@ -17,9 +17,6 @@
     },
     "einsteinGptSettings": {
       "enableEinsteinGptPlatform": true
-    },
-    "customerDataPlatformSettings": {
-      "enableCustomerDataPlatform": true
     }
   }
 }
