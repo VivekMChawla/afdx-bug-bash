@@ -1,0 +1,25 @@
+{
+  "orgName": "AFDX Bug Bash",
+  "edition": "Enterprise",
+  "features": [
+    "EnableSetPasswordInApi", 
+    "Einstein1AIPlatform", 
+    "Knowledge", 
+    "Interaction", 
+    "ServiceCloud", "ServiceUser", 
+    "CustomerDataPlatform", "CustomerDataPlatformLite"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "einsteinGptSettings": {
+      "enableEinsteinGptPlatform": true
+    },
+    "customerDataPlatformSettings": {
+      "enableCustomerDataPlatform": true
+    }
+  }
+}

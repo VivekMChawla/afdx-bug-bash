@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic addresses customer inquiries related to the local history and culture of Coral Cloud Resort and the community of Port Aurelia that it calls home, enriching guest experiences by bringing the resort and town to life.</description>
+    <developerName>Local_History</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Customer_Details</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a customer would like information about local history or culture, you should run the action &apos;Answer Questions With Knowledge&apos; and then summarize what you find with concise, readable text. ALWAYS ensure your answer is grounded by details found in the Content__c field of the Knowledge article you found.</description>
+        <developerName>instruction_ifacustome0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifacustome0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the customer asks you to suggest local activities based on the historical or cultural information you just shared, you must ensure they are known to you. If the customer is not known, politely ask for their email address and their membership number to get their Contact record by running the action &apos;Get Customer Details&apos; before running any other actions.</description>
+        <developerName>instruction_ifthecusto1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifthecusto1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When suggesting local activities, use the interests specified in the contact record from &apos;Get Customer Details&apos; to provide suggestions that align with things the customer might enjoy doing. When no interests are specified, make suggestions that would generally be enjoyable by people on vacation.</description>
+        <developerName>instruction_whensugges2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whensugges2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>After elaborating on a particular historical or cultural topic, ask the customer if they would like you to suggest local activities that relate to what you just told them.</description>
+        <developerName>instruction_afterelabo3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_afterelabo3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>After providing an initial summary response to a question about local history or culture, always ask the customer if they would like to know more, then elaborate if they indicate they&apos;d like you to continue.</description>
+        <developerName>instruction_afterprovi4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_afterprovi4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Local History</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>The agent&apos;s job is to answer questions about the history and culture of Coral Cloud Resort and the city of Port Aurelia in which it resides. The agent shares interesting facts that enhance the experience of guests and suggests local activities based on the shared facts that align with the customer&apos;s interests.</scope>
+</GenAiPlugin>

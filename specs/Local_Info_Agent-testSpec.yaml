@@ -1,0 +1,18 @@
+name: Local Info Agent Test
+description: Functional tests for the Local Info Agent.
+subjectType: AGENT
+subjectName: Local_Info_Agent
+testCases:
+  - utterance: Tell me about local events happenning tonight.
+    expectedTopic: Local_Events_Information
+    expectedActions:
+    expectedOutcome: 
+      Could you let me know what type of event you're interested in? 
+      For example, are you looking for cultural events, family-friendly activities, 
+      or something else?
+  - utterance: What's the weather like today?
+    expectedTopic: Weather_and_Temperature_Information
+    expectedActions:
+    expectedOutcome: 
+      The weather today is sunny with a high of 75 degrees and a low of 60 degrees. 
+      Would you like me to check the weather for tomorrow as well?
