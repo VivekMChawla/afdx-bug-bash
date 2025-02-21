@@ -44,5 +44,5 @@ $RECYCLE.BIN/
 **/.venv/
 **/venv/
 
-# Local SFDX temp directory
+# Local AFDX temp directory
 **/temp/
