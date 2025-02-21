@@ -46,3 +46,6 @@ $RECYCLE.BIN/
 
 # Local AFDX temp directory
 **/temp/
+
+# Local AFDX preview directory
+**/preview/
