@@ -2,7 +2,6 @@
   "orgName": "Data Cloud Scratch Org",
   "description": "This scratch org was created with Data Cloud enabled. This SHOULD NOT be used by pre-release testers as part of the AFDX Bug Bash.",
   "edition": "Enterprise",
-  "expirationDays": 7,
   "hasSampleData": false,
   "features": ["EnableSetPasswordInApi", "Einstein1AIPlatform", "Knowledge", "Interaction", "ServiceCloud", "ServiceUser","CustomerDataPlatform", "CustomerDataPlatformLite"],
   "settings": {
