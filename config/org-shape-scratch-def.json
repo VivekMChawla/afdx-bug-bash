@@ -1,0 +1,18 @@
+{
+  "orgName": "AFDX Bug Bash (Org Shape - USA1000-02)",
+  "description": "This scratch org was created using the org shape of afdx-usa1000-02 for use by pre-release testers as part of the AFDX Bug Bash.",
+  "sourceOrg": "00Ded000000VsTx",
+  "expirationDays": 7,
+  "hasSampleData": false,
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "einsteinGptSettings": {
+      "enableEinsteinGptPlatform": true
+    }
+  }
+}

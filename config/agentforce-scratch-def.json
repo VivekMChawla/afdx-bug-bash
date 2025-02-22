@@ -1,13 +1,10 @@
 {
   "orgName": "AFDX Bug Bash",
+  "description": "This scratch org was created for use by pre-release testers as part of the AFDX Bug Bash.",
   "edition": "Enterprise",
-  "features": [
-    "EnableSetPasswordInApi", 
-    "Einstein1AIPlatform", 
-    "Knowledge", 
-    "Interaction", 
-    "ServiceCloud", "ServiceUser", 
-    "CustomerDataPlatform", "CustomerDataPlatformLite"],
+  "expirationDays": 7,
+  "hasSampleData": false,
+  "features": ["EnableSetPasswordInApi", "Einstein1AIPlatform", "Knowledge", "Interaction", "ServiceCloud", "ServiceUser"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
@@ -17,9 +14,6 @@
     },
     "einsteinGptSettings": {
       "enableEinsteinGptPlatform": true
-    },
-    "customerDataPlatformSettings": {
-      "enableCustomerDataPlatform": true
     }
   }
 }
