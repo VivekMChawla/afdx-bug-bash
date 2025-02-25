@@ -6,13 +6,13 @@
         <botSteps>
             <botMessages>
                 <message>Hi! I&apos;m Agentforce, an AI assistant. I can do things like search your Salesforce data or the internet, edit your Salesforce records, and draft or revise emails and fields. Ask me &quot;What else can you do?&quot; to see how I can help simplify your work day.</message>
-                <messageIdentifier>c5ed30ca-4502-41d6-aaa0-fc8eecacfbaf</messageIdentifier>
+                <messageIdentifier>882f62d8-79fa-4d71-b3a6-f0e9a3f8846b</messageIdentifier>
             </botMessages>
-            <stepIdentifier>18460fc4-5136-4eed-93b8-dc33fddd225d</stepIdentifier>
+            <stepIdentifier>cba2e3f8-0b9d-4d75-b6c5-87c2de30004c</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>8f5d53e0-1689-4875-b9bb-8a03453d49de</stepIdentifier>
+            <stepIdentifier>cdb64430-53c7-420d-b9c0-3e809f683e6d</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -24,13 +24,13 @@
         <botSteps>
             <botMessages>
                 <message>Something went wrong. Try again.</message>
-                <messageIdentifier>4bcd5ab0-4c81-45f3-8518-f8d6bd2716d1</messageIdentifier>
+                <messageIdentifier>95d573de-44b7-4d0b-b07b-2a3ff0698db0</messageIdentifier>
             </botMessages>
-            <stepIdentifier>4c5265ee-a8ca-4e25-b911-e40c7eab6c89</stepIdentifier>
+            <stepIdentifier>a4b4d171-03e1-4299-91e8-fdfecd6d4b75</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>30a0e7a9-b256-4e24-b439-fb639db5a5bc</stepIdentifier>
+            <stepIdentifier>043b9c28-4cc7-4e90-9a18-bd471e38a2ad</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Rich_Content_Error_Handling</developerName>
@@ -48,14 +48,6 @@
     </conversationSystemDialogs>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>Salesforce Application Name.</description>
-        <developerName>currentAppName</developerName>
-        <includeInPrompt>true</includeInPrompt>
-        <label>Current App Name</label>
-        <visibility>External</visibility>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
         <description>The API name of the Salesforce object (such as Account or Opportunity) associated with the record the user wants to interact with. Do not use this if the user is already talking about another object in the conversation.</description>
         <developerName>currentObjectApiName</developerName>
         <includeInPrompt>true</includeInPrompt>
@@ -64,10 +56,10 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>Type of Salesforce Page.</description>
-        <developerName>currentPageType</developerName>
+        <description>Salesforce Application Name.</description>
+        <developerName>currentAppName</developerName>
         <includeInPrompt>true</includeInPrompt>
-        <label>Current Page Type</label>
+        <label>Current App Name</label>
         <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
@@ -76,6 +68,14 @@
         <developerName>currentRecordId</developerName>
         <includeInPrompt>true</includeInPrompt>
         <label>Current Record Id</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>Type of Salesforce Page.</description>
+        <developerName>currentPageType</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Current Page Type</label>
         <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
