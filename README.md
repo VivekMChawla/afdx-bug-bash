@@ -71,10 +71,9 @@ Return the keyword to `topic` and run the validation command again.
 #### 2. Make the agent give you a whimsical weather report
 Modify the agent script so the agent reports weather in the whimsical manner of your choice.  Look at the `.agent` file in the version 3 bundle to see how it was made to give weather like a pirate.
 
-#### 3. Preview the agent to see your changes.
 Run a live or simulated preview to view changes in the agent's behavior.
 
-#### 4. Publish the agent.
+#### 3. Publish the agent.
 Right-click inside the Agent Script file and select **AFDX: Publish this Agent**.
 
 You can also try to publish using the following command:
