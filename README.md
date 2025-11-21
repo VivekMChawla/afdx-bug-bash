@@ -1,4 +1,4 @@
-# AFDX Pro-Code Bug Bash
+# AFDX+NGA Pro-Code Bug Bash
 
 ## Bug Bash Flow
 
