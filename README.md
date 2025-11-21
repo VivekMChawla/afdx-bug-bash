@@ -40,7 +40,7 @@ Run the following command and select `Local_Info_Agent_NGA_3 (Agent Script)`, th
 ```
 sf agent preview --use-live-actions
 ```
-#### 3. Preview `Local_Info_Agent_NGA` in "simulation mode" using the CLI
+#### 3. Preview `Local_Info_Agent_NGA` in "simulation mode" using VS Code.
 Open `Local_Info_Agent_NGA.agent` from the `aiAuthoringBundles` source directory inside `force-app/main/default`.
 
 Right-click inside the Agent Script file and select **AFDX: Preview this Agent**.
@@ -49,7 +49,7 @@ Click the "Start Simulation" button.  If the button says "Start Live Test", use 
 
 Ask about today's weather.  Click the **Stop Simulation** button when done.
 
-#### 4. Preview `Local_Info_Agent_NGA` in "live action mode" using the CLI
+#### 4. Preview `Local_Info_Agent_NGA` in "live action mode" using VS Code.
 Use the "Start Simulation" button's drop-down to select "Live Mode".
 
 Click the "Start Live Test" button.
