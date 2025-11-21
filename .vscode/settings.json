@@ -7,5 +7,6 @@
   "salesforcedx-vscode-core.show-cli-success-msg": false,
   "salesforcedx-vscode-slds.basic.mobileValidation": false,
   "salesforcedx-vscode-slds.basic.invalid": false,
-  "salesforcedx-vscode-slds.enabled": false
+  "salesforcedx-vscode-slds.enabled": false,
+  "xml.preferences.showSchemaDocumentationType": "none"
 }
