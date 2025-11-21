@@ -68,9 +68,9 @@
         <dataType>Text</dataType>
         <description>This variable may also be referred to as VerifiedCustomerId</description>
         <developerName>VerifiedCustomerId</developerName>
-        <includeInPrompt>false</includeInPrompt>
+        <includeInPrompt>true</includeInPrompt>
         <label>VerifiedCustomerId</label>
-        <visibility>Internal</visibility>
+        <visibility>External</visibility>
     </conversationVariables>
     <entryDialog>Welcome</entryDialog>
     <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
@@ -79,5 +79,6 @@
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
     <role>An AI concierge whose job is to help resort guests with questions about the history, culture, events, social programs, and colorful characters local to Coral Cloud Resort and its surrounding city of Port Aurelia.</role>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

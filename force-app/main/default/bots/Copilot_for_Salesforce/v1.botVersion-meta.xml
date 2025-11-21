@@ -6,13 +6,13 @@
         <botSteps>
             <botMessages>
                 <message>Hi! I&apos;m Agentforce, an AI assistant. I can do things like search your Salesforce data or the internet, edit your Salesforce records, and draft or revise emails and fields. Ask me &quot;What else can you do?&quot; to see how I can help simplify your work day.</message>
-                <messageIdentifier>882f62d8-79fa-4d71-b3a6-f0e9a3f8846b</messageIdentifier>
+                <messageIdentifier>6ceca761-5906-4017-8c05-c0cc50e77590</messageIdentifier>
             </botMessages>
-            <stepIdentifier>cba2e3f8-0b9d-4d75-b6c5-87c2de30004c</stepIdentifier>
+            <stepIdentifier>4ddedc11-2e21-42fd-abb1-b761926b8df2</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>cdb64430-53c7-420d-b9c0-3e809f683e6d</stepIdentifier>
+            <stepIdentifier>b476869e-41b6-4218-8bd8-3e4ed2125eaa</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -24,13 +24,13 @@
         <botSteps>
             <botMessages>
                 <message>Something went wrong. Try again.</message>
-                <messageIdentifier>95d573de-44b7-4d0b-b07b-2a3ff0698db0</messageIdentifier>
+                <messageIdentifier>0d5e6de9-300f-4cf4-8d75-10580feb376c</messageIdentifier>
             </botMessages>
-            <stepIdentifier>a4b4d171-03e1-4299-91e8-fdfecd6d4b75</stepIdentifier>
+            <stepIdentifier>7a0ce519-9f1f-4d9a-b76a-890bdb8b0dd5</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>043b9c28-4cc7-4e90-9a18-bd471e38a2ad</stepIdentifier>
+            <stepIdentifier>c48f20b9-486f-4b29-be33-e0b93e920d1d</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Rich_Content_Error_Handling</developerName>
@@ -48,6 +48,14 @@
     </conversationSystemDialogs>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Salesforce Application Name.</description>
+        <developerName>currentAppName</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Current App Name</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
         <description>The API name of the Salesforce object (such as Account or Opportunity) associated with the record the user wants to interact with. Do not use this if the user is already talking about another object in the conversation.</description>
         <developerName>currentObjectApiName</developerName>
         <includeInPrompt>true</includeInPrompt>
@@ -56,10 +64,10 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>Salesforce Application Name.</description>
-        <developerName>currentAppName</developerName>
+        <description>Type of Salesforce Page.</description>
+        <developerName>currentPageType</developerName>
         <includeInPrompt>true</includeInPrompt>
-        <label>Current App Name</label>
+        <label>Current Page Type</label>
         <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
@@ -72,10 +80,10 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <description>Type of Salesforce Page.</description>
-        <developerName>currentPageType</developerName>
+        <description>Stores the conversation history to provide context for answering questions. If the user says &apos;Continue from the preceding conversation&apos; and this variable has content, inform: &apos;I can answer questions and help you with tasks related to this page.&apos;</description>
+        <developerName>precedingConversation</developerName>
         <includeInPrompt>true</includeInPrompt>
-        <label>Current Page Type</label>
+        <label>Preceding Conversation</label>
         <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
@@ -92,4 +100,5 @@
     <knowledgeActionEnabled>false</knowledgeActionEnabled>
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <surfacesEnabled>false</surfacesEnabled>
 </BotVersion>

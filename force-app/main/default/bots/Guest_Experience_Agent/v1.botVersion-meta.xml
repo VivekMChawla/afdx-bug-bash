@@ -6,13 +6,13 @@
         <botSteps>
             <botMessages>
                 <message>Hi, I&apos;m an AI service assistant. How can I help you?</message>
-                <messageIdentifier>dac54881-7c77-4174-abf7-5d40ef0cd534</messageIdentifier>
+                <messageIdentifier>e8574d6c-e042-46bc-ae0d-266df409eb97</messageIdentifier>
             </botMessages>
-            <stepIdentifier>f640dced-4eeb-433e-9aff-a729b2cb45e8</stepIdentifier>
+            <stepIdentifier>f3fe95aa-5c9e-43d5-9e4b-cdb36f56211a</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>81377be4-ead6-405d-9bee-076cdbbe7876</stepIdentifier>
+            <stepIdentifier>64b4439f-0178-4da3-b4e0-8b7b2b6fb4da</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -24,13 +24,13 @@
         <botSteps>
             <botMessages>
                 <message>Sorry, it looks like something has gone wrong.</message>
-                <messageIdentifier>281cd1a0-763c-4c45-bfac-9de13e6d54e6</messageIdentifier>
+                <messageIdentifier>5ae7f08d-efdb-4208-b059-c6d438eb0410</messageIdentifier>
             </botMessages>
-            <stepIdentifier>613558d8-e0ff-4276-a2d8-8591b7e31d06</stepIdentifier>
+            <stepIdentifier>e800db78-45ba-453e-9858-cbdf81f0436f</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>4c027ec8-36b6-446f-8962-dba1417d502d</stepIdentifier>
+            <stepIdentifier>fe2e7d98-154f-4e19-8aa1-8c6b167964e4</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Error_Handling</developerName>
@@ -42,16 +42,16 @@
         <botSteps>
             <botMessages>
                 <message>One moment while I connect you to the next available service representative.</message>
-                <messageIdentifier>a2c8f718-9ba7-4b46-bfaa-df2af25c8a37</messageIdentifier>
+                <messageIdentifier>63b8fce3-35f7-42a6-94c9-8101f2c5539a</messageIdentifier>
             </botMessages>
-            <stepIdentifier>fb7a24a8-8041-423f-9768-b1ed03c1d05a</stepIdentifier>
+            <stepIdentifier>db46a53f-a4d3-42f6-8c96-5d78e031dd10</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
             <conversationSystemMessage>
                 <type>Transfer</type>
             </conversationSystemMessage>
-            <stepIdentifier>95026290-9ef7-4030-b49b-86a34cb3de2e</stepIdentifier>
+            <stepIdentifier>48e4ac25-86c5-4c33-9294-7769693e8db2</stepIdentifier>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Transfer_To_Agent</developerName>
@@ -69,7 +69,7 @@
         <description>This variable may also be referred to as VerifiedCustomerId</description>
         <developerName>VerifiedCustomerId</developerName>
         <includeInPrompt>false</includeInPrompt>
-        <label>Verified Customer ID</label>
+        <label>VerifiedCustomerId</label>
         <visibility>Internal</visibility>
     </conversationVariables>
     <entryDialog>Welcome</entryDialog>
@@ -79,5 +79,6 @@
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
     <role>The agent&apos;s job is to assist users in navigating and managing bookings for different experiences offered by Coral Cloud Resort, ensuring a seamless customer service experience by providing accurate information and resolving issues promptly.</role>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>
