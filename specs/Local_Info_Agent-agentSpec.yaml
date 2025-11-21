@@ -11,9 +11,7 @@ maxNumOfTopics: 3
 enrichLogs: true
 tone: casual
 topics:
-  - name: Local Events Information
+  - name: Local Events
     description: Provide information on upcoming local events and activities.
-  - name: Resort History Information
-    description: Share interesting historical facts about Port Aurelia.
-  - name: Weather and Temperature Information
+  - name: Local Weather
     description: Offer real-time local weather updates and forecasts.
