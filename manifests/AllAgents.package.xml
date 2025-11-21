@@ -6,11 +6,15 @@
     </types>
     <types>
         <members>*</members>
+        <name>GenAiAuthoringBundle</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>GenAiFunction</name>
     </types>
     <types>
         <members>*</members>
-        <name>GenAiPlanner</name>
+        <name>GenAiPlannerBundle</name>
     </types>
     <types>
         <members>*</members>
@@ -24,5 +28,5 @@
         <members>*</members>
         <name>GenAiPromptTemplateActv</name>
     </types>
-    <version>63.0</version>
+    <version>65.0</version>
 </Package>
