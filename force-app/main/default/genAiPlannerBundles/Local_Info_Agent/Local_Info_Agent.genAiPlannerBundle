@@ -27,14 +27,14 @@
             <developerName>instruction_iftheuserd1</developerName>
             <language>en_US</language>
             <masterLabel>instruction_iftheuserd1</masterLabel>
-            <sortOrder>0</sortOrder>
+            <sortOrder>1</sortOrder>
         </genAiPluginInstructions>
         <genAiPluginInstructions>
             <description>Use the Check_Events action to get a list of events that are relevant to the guest.</description>
             <developerName>instruction_usethechec2</developerName>
             <language>en_US</language>
             <masterLabel>instruction_usethechec2</masterLabel>
-            <sortOrder>0</sortOrder>
+            <sortOrder>2</sortOrder>
         </genAiPluginInstructions>
         <language>en_US</language>
         <localActionLinks>
@@ -75,28 +75,28 @@
             <developerName>instruction_ifacustome0</developerName>
             <language xsi:nil="true"/>
             <masterLabel>instruction_ifacustome0</masterLabel>
-            <sortOrder>0</sortOrder>
+            <sortOrder>1</sortOrder>
         </genAiPluginInstructions>
         <genAiPluginInstructions>
             <description>If the customer DOES NOT provide a specific date OR asks about today&apos;s weather, use FOUR days AFTER TODAY as the date when running the &apos;Check Weather&apos; action.  If the customer DOES provide a specific date, ensure it IS NOT TODAY or in the past.</description>
             <developerName>instruction_ifthecusto1</developerName>
             <language xsi:nil="true"/>
             <masterLabel>instruction_ifthecusto1</masterLabel>
-            <sortOrder>0</sortOrder>
+            <sortOrder>2</sortOrder>
         </genAiPluginInstructions>
         <genAiPluginInstructions>
             <description>ALWAYS Provide forecasts that include a temperature range.</description>
             <developerName>instruction_presentall3</developerName>
             <language xsi:nil="true"/>
             <masterLabel>instruction_presentall3</masterLabel>
-            <sortOrder>0</sortOrder>
+            <sortOrder>3</sortOrder>
         </genAiPluginInstructions>
         <genAiPluginInstructions>
             <description>When responding, ALWAYS say something like &quot;The weather at Coral Cloud Resort will have temperatures between 48.5F and 70.0F.&quot;  NEVER use the ° character in your response.</description>
             <developerName>instruction_presentall4</developerName>
             <language xsi:nil="true"/>
             <masterLabel>instruction_presentall4</masterLabel>
-            <sortOrder>0</sortOrder>
+            <sortOrder>4</sortOrder>
         </genAiPluginInstructions>
         <language>en_US</language>
         <localActionLinks>
