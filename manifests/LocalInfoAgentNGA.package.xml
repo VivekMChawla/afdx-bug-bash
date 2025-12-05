@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CheckWeather</members>
+        <members>CurrentDate</members>
+        <members>CurrentDateTest</members>
+        <members>WeatherService</members>
+        <members>WeatherServiceTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Local_Info_Agent_NGA</members>
+        <name>AiAuthoringBundle</name>
+    </types>
+    <types>
+        <members>Get_Event_Info</members>
+        <name>GenAiPromptTemplate</name>
+    </types>
+    <version>65.0</version>
+</Package>
