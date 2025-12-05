@@ -16,6 +16,7 @@ Ensure you're running the latest version of the Salesforce CLI. Run the update c
 sf update
 ```
 #### 3. Authenticate the Salesforce CLI to your NGA Production Org
+Your username was provided when you got an org from Org Farm. The password is always `orgfarm1234`
 ```
 sf org login web -s -a AFDX:BugBash 
 ```
