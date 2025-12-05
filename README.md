@@ -33,10 +33,21 @@ This gives you local access to all authoring bundles used in the org.
 ```
 sf project retrieve start -m AiAuthoringBundle
 ```
-#### 5. Deploy the `Local_Info_Agent_NGA` metadata.
+#### 6. Deploy the `Local_Info_Agent_NGA` metadata.
 ```
  sf project deploy start --manifest manifests/LocalInfoAgentNGA.package.xml
 ```
+#### 7. Assign a default agent user
+1. Open Agentforce Studio in your org
+2. Open the `Local_Info_Agent_NGA`
+3. On the Agent Details page, update the **Agent User's Record** with one of the Einstein Serice Agent users
+4. Save your changes
+
+#### 8. Retrieve the updated Agent Script
+1. Open the `Local_Info_Agent_NGA` agent script
+2. Right click and select "SFDX: Retrieve Source from Org"
+
+
 
 ### Preview from Authoring Bundles
 
