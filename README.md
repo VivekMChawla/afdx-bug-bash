@@ -15,12 +15,7 @@ Ensure you're running the latest version of the Salesforce CLI. Run the update c
 ```
 sf update
 ```
-#### 3. Authenticate the Salesforce CLI to your NGA Production Org
-Your username was provided when you got an org from Org Farm. The password is always `orgfarm1234`
-```
-sf org login web -s -a AFDX:BugBash 
-```
-#### 4. Install the latest version of the `agent` plugin.
+#### 3. Install the latest version of the `agent` plugin.
 Ensure you're using the pre-release version of the `agent` plugin.
 ```
 sf plugins install agent
@@ -28,22 +23,28 @@ sf plugins install agent
 #### 4. Install VS Code extensions
 Follow the instructions in [AFDX: V3 Beta Bug Bash](https://docs.google.com/spreadsheets/d/18JM9WoYFad5x85g9-F-qYwgbUkYEe6DuXpqzxiAfFDY/edit?usp=sharing)
 
-#### 5. Retrieve all authoring bundles.
-This gives you local access to all authoring bundles used in the org.
+#### 5. Authenticate the Salesforce CLI to your NGA Production Org
+Your username was set by Org Farm. The password is always `orgfarm1234`
+```
+sf org login web -s -a AFDX:BugBash 
+```
+#### 6. Retrieve all authoring bundles.
+This gives you local access to the authoring bundles used by the Pronto sample app.
 ```
 sf project retrieve start -m AiAuthoringBundle
 ```
-#### 6. Deploy the `Local_Info_Agent_NGA` metadata.
+#### 7. Deploy the `Local_Info_Agent_NGA` metadata.
+This creates an NGA version of a simple "Local Info Agent".
 ```
  sf project deploy start --manifest manifests/LocalInfoAgentNGA.package.xml
 ```
-#### 7. Assign a default agent user
+#### 8. Assign a default agent user
 1. Open Agentforce Studio in your org
 2. Open the `Local_Info_Agent_NGA`
 3. On the Agent Details page, update the **Agent User's Record** with one of the Einstein Serice Agent users
 4. Save your changes
 
-#### 8. Retrieve the updated Agent Script
+#### 9. Retrieve the updated Agent Script
 1. Open the `Local_Info_Agent_NGA` agent script
 2. Right click and select "SFDX: Retrieve Source from Org"
 
