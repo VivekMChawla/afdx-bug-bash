@@ -4,39 +4,48 @@
 
 ### Environment Setup
 
-#### 1. Authorize your project to the Bug Bash Test org.
-Use the credentials provided to you by the Bug Bash host.
-```
-sf org login web -s -a AFDX:BugBash -r https://afdx-sdb39-01.test1.my.pc-rnd.salesforce.com
-```
+#### 1. Request an NGA Production Org
+1. Go to the [OrgFarm Signup Page](https://orgfarm.salesforce.com/signup)
+2. Use the following event code: `BRET2025` (CASE-SENSITIVE)
+3. Make note of your org's username. Your password will be `orgfarm1234`
+4. If you can't see the username, open the `OrgFarm EPIC` user in setup.
+
 #### 2. Update the Salesforce CLI
 Ensure you're running the latest version of the Salesforce CLI. Run the update command repeatedly until you see a message "Updating CLI... already on version <current version>"
 ```
 sf update
 ```
-#### 3. Install the latest version of the `agent` plugin.
+#### 3. Authenticate the Salesforce CLI to your NGA Production Org
+```
+sf org login web -s -a AFDX:BugBash 
+```
+#### 4. Install the latest version of the `agent` plugin.
 Ensure you're using the pre-release version of the `agent` plugin.
 ```
-sf plugins install agent@nga
+sf plugins install agent
 ```
 #### 4. Install VS Code extensions
 Follow the instructions in [AFDX: V3 Beta Bug Bash](https://docs.google.com/spreadsheets/d/18JM9WoYFad5x85g9-F-qYwgbUkYEe6DuXpqzxiAfFDY/edit?usp=sharing)
 
-#### 5. Retrieve all `Local_Info_Agent_NGA` authoring bundles.
-This gives you access to all versions of the NGA agent used during the bug bash.
+#### 5. Retrieve all authoring bundles.
+This gives you local access to all authoring bundles used in the org.
 ```
-sf project retrieve start -m "AiAuthoringBundle:Local_Info_Agent_NGA_*"
+sf project retrieve start -m AiAuthoringBundle
+```
+#### 5. Deploy the `Local_Info_Agent_NGA` metadata.
+```
+ sf project deploy start --manifest manifests/LocalInfoAgentNGA.package.xml
 ```
 
 ### Preview from Authoring Bundles
 
-#### 1. Preview `Local_Info_Agent_NGA_3` in "simulation mode" using the CLI
-Run the following command and select `Local_Info_Agent_NGA_3 (Agent Script)`, then ask about today's weather.  
+#### 1. Preview `Local_Info_Agent_NGA` in "simulation mode" using the CLI
+Run the following command and select `Local_Info_Agent_NGA (Agent Script)`, then ask about today's weather.  
 ```
 sf agent preview 
 ```
-#### 2. Preview `Local_Info_Agent_NGA_3` in "live action mode" using the CLI
-Run the following command and select `Local_Info_Agent_NGA_3 (Agent Script)`, then ask about today's weather.  
+#### 2. Preview `Local_Info_Agent` in "live action mode" using the CLI
+Run the following command and select `Local_Info_Agent_NGA (Agent Script)`, then ask about today's weather.  
 ```
 sf agent preview --use-live-actions
 ```
@@ -69,7 +78,7 @@ Right-click inside the Agent Script file and select **AFDX: Validate this Agent*
 Return the keyword to `topic` and run the validation command again.
 
 #### 2. Make the agent give you a whimsical weather report
-Modify the agent script so the agent reports weather in the whimsical manner of your choice.  Look at the `.agent` file in the version 3 bundle to see how it was made to give weather like a pirate.
+Modify the agent script so the agent reports weather in the whimsical manner of your choice.  Look at the `.agent` file in the bundle to see how it was made to give weather like a pirate.
 
 Run a live or simulated preview to view changes in the agent's behavior.
 
